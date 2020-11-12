@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 4 Auto-layout Columns</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1 class="display-2 text-center">Max Clothing</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+              <a href="home.html"> <h1 class="text-center">Home</h1> </a>
+          </div>
+          <div class="col">
+              <a href="new.html"> <h1 class="text-center">New</h1> </a>
+          </div>
+          <div class="col">
+              <a href="clothing.html"><h1 class="text-center">Clothing</h1> </a>
+          </div>
+          <div class="col">
+              <a href="sales.html"> <h1 class="text-center">Sales</h1> </a>
+          </div>
+          <div class="col">
+              <a href="cart.html"> <h1 class="text-center">Cart</h1> </a>
+          </div>
+        </div>
+      </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#"> <img src="img/Banner1.jpg" class="slide_images" alt="First Slide"> </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"> <img src="img/Banner2.jpg" class="slide_images" alt="Second Slide"> </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"> <img src="img/Banner3.jpg" class="slide_images" alt="Third Slide"> </a>
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span style="font-size: 2em; color: black;">
+          <i class="fas fa-arrow-left"></i>
+        </span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span style="font-size: 2em; color: black;">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+
+    <h1 class="display-3 text-center">New</h1>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-4 text-center"> <a href="#" role="button" class="btn" data-toggle="modal" data-target="#product_view"><img src="img/New1.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#" role="button" class="btn" data-toggle="modal" data-target="#product_view2"><img src="img/New2.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#" role="button" class="btn" data-toggle="modal" data-target="#product_view"><img src="img/New3.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#" role="button" class="btn" data-toggle="modal" data-target="#product_view"><img src="img/New4.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#" role="button" class="btn" data-toggle="modal" data-target="#product_view"><img src="img/New5.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#" role="button" class="btn" data-toggle="modal" data-target="#product_view"><img src="img/New6.png"></a> </div>
+      </div>
+    </div>
+
+    <h1 class="display-3 text-center">Brands</h1>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-4 text-center"> <a href="#"><img src="img/Brand1.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#"><img src="img/Brand2.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#"><img src="img/Brand3.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#"><img src="img/Brand4.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#"><img src="img/Brand5.png"></a> </div>
+        <div class="col-lg-4 text-center"> <a href="#"><img src="img/Brand6.png"></a> </div>
+      </div>
+    </div>
+
+    <div class="modal fade product_view" id="product_view">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Product Name</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 product_img">
+                        <img src="img/New1.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-6 product_content">
+                        <h5>Product Brand/Name</h5>
+                        <p>Test description talking about the product on sale to the left. Test description talking about the product on sale to the left.
+                        Test description talking about the product on sale to the left. Test description talking about the product on sale to the left.
+                        Test description talking about the product on sale to the left.</p>
+                        <h3 class="cost"> Price 00.00 </h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select class="form-control" name="select">
+                                    <option value="" selected="">Size</option>
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                    <option value="extra large">XL</option>
+                                </select>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="space-ten"></div>
+                        <div class="btn-ground">
+                            <button type="button" class="btn btn-primary"> Add To Cart</button>
+                            <button type="button" class="btn btn-primary"> Add To Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade product_view" id="product_view2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Product Name</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 product_img">
+                        <img src="img/New2.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-6 product_content">
+                        <h5>Product Brand/Name</h5>
+                        <p>Test description talking about the product on sale to the left. Test description talking about the product on sale to the left.
+                        Test description talking about the product on sale to the left. Test description talking about the product on sale to the left.
+                        Test description talking about the product on sale to the left.</p>
+                        <h3 class="cost"> Price 00.00 </h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select class="form-control" name="select">
+                                    <option value="" selected="">Size</option>
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                    <option value="extra large">XL</option>
+                                </select>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="space-ten"></div>
+                        <div class="btn-ground">
+                            <button type="button" class="btn btn-primary"> Add To Cart</button>
+                            <button type="button" class="btn btn-primary"> Add To Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col">
+        <h3 class="display-5 text-center">My Account</h3>
+        <a href="#"> <h6 class="text-center">My Account</h6> </a>
+        <a href="#"> <h6 class="text-center">Log In</h6> </a>
+        <a href="#"> <h6 class="text-center">My Orders</h6> </a>
+      </div>
+      <div class="col">
+        <h3 class="display-5 text-center">Information</h3>
+        <a href="#"> <h6 class="text-center">About Us</h6> </a>
+        <a href="#"> <h6 class="text-center">Contact Us</h6> </a>
+        <a href="#"> <h6 class="text-center">Terms & Conditions</h6> </a>
+      </div>
+      <div class="col">
+        <h3 class="display-5 text-center">Quick Links</h3>
+        <a href="#"> <h6 class="text-center">New User</h6> </a>
+        <a href="#"> <h6 class="text-center">Help Center</h6> </a>
+        <a href="#"> <h6 class="text-center">FAQ'S</h6> </a>
+      </div>
+      <div class="col">
+        <h3 class="display-5 text-center">Question?</h3>
+        <h6 class="text-center">203 Fake St. Mountain View, San Francisco, California, USA</h6>
+        <h6 class="text-center">+2 392 3929 210</h6>
+        <a href="#"> <h6 class="text-center">Email Us</h6> </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/3c8b27f6d5.js" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
